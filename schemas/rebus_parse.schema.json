@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Russian Rebus Visual Parse v2.1",
+  "type": "object",
+  "properties": {
+    "modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "content": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "local",
+              "whole_token",
+              "whole_card",
+              null
+            ]
+          },
+          "state": {
+            "enum": [
+              "present",
+              "crossed_whole",
+              "missing",
+              "repeated",
+              "highlighted",
+              null
+            ]
+          },
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "visible": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
+}

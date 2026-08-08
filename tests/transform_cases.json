@@ -1,0 +1,107 @@
+[
+  {
+    "name": "drop_left",
+    "base": "СОМ",
+    "ops": [
+      {
+        "op": "drop_left",
+        "n": 1
+      }
+    ],
+    "expected": "ОМ"
+  },
+  {
+    "name": "drop_right",
+    "base": "КОТ",
+    "ops": [
+      {
+        "op": "drop_right",
+        "n": 1
+      }
+    ],
+    "expected": "КО"
+  },
+  {
+    "name": "reverse",
+    "base": "НОС",
+    "ops": [
+      {
+        "op": "reverse"
+      }
+    ],
+    "expected": "СОН"
+  },
+  {
+    "name": "replace",
+    "base": "МАК",
+    "ops": [
+      {
+        "op": "replace",
+        "old": "М",
+        "new": "Р"
+      }
+    ],
+    "expected": "РАК"
+  },
+  {
+    "name": "delete_char",
+    "base": "КРОТ",
+    "ops": [
+      {
+        "op": "delete_char",
+        "char": "Р"
+      }
+    ],
+    "expected": "КОТ"
+  },
+  {
+    "name": "indices",
+    "base": "ЛИПА",
+    "ops": [
+      {
+        "op": "indices",
+        "positions": [
+          3,
+          2,
+          1,
+          4
+        ]
+      }
+    ],
+    "expected": "ПИЛА"
+  },
+  {
+    "name": "swap",
+    "base": "КОТ",
+    "ops": [
+      {
+        "op": "swap",
+        "i": 1,
+        "j": 3
+      }
+    ],
+    "expected": "ТОК"
+  },
+  {
+    "name": "prefix",
+    "base": "ОМ",
+    "ops": [
+      {
+        "op": "prefix",
+        "text": "Д"
+      }
+    ],
+    "expected": "ДОМ"
+  },
+  {
+    "name": "suffix",
+    "base": "ЛЕВ",
+    "ops": [
+      {
+        "op": "suffix",
+        "text": "ША"
+      }
+    ],
+    "expected": "ЛЕВША"
+  }
+]

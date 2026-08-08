@@ -1,0 +1,14 @@
+{
+  "source": "",
+  "mode": [
+    "META_PHRASE_PUN"
+  ],
+  "visual_parse": {},
+  "literal_narration": [],
+  "predicted_answer": "",
+  "target_answer": "",
+  "phonetic_resegmentation": [],
+  "exact_match": false,
+  "full_symbol_accounting": false,
+  "failure_type": null
+}

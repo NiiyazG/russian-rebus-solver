@@ -1,0 +1,57 @@
+{
+  "name": "kobyla_zabyla_poest_appetita_netu",
+  "visual_parse": {
+    "tokens": [
+      {
+        "token": "КО",
+        "state": "crossed_whole"
+      },
+      {
+        "token": "ЗА",
+        "state": "crossed_whole"
+      },
+      {
+        "token": "ПО",
+        "state": "present"
+      }
+    ],
+    "sequence": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "expected_missing": [
+    5
+  ],
+  "selected_literal": [
+    "КО была",
+    "ЗА была",
+    "ПО есть",
+    "а пяти-то нету"
+  ],
+  "resegmented": [
+    [
+      "КО была",
+      "кобыла"
+    ],
+    [
+      "ЗА была",
+      "забыла"
+    ],
+    [
+      "ПО есть",
+      "поесть"
+    ],
+    [
+      "а пяти-то",
+      "аппетита"
+    ]
+  ],
+  "final_answer": "Кобыла забыла поесть — аппетита нету"
+}

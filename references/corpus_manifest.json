@@ -1,0 +1,12 @@
+{
+  "version": "2.1.0",
+  "new_mode": "META_PHRASE_PUN",
+  "new_operators": [
+    "crossed_whole -> was/absent narration",
+    "present -> есть",
+    "missing sequence member -> нет/нету",
+    "phonetic resegmentation across word boundaries"
+  ],
+  "canonical_case": "КО crossed, ЗА crossed, ПО present, 5 missing",
+  "canonical_answer": "Кобыла забыла поесть — аппетита нету"
+}
